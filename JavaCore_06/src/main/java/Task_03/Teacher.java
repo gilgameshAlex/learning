@@ -22,7 +22,7 @@ public class Teacher extends Person {
     public void evaluate(Student student)
     {
         Random random = new Random();
-        int randVal = random.nextInt(5) + 2;
+        int randVal = random.nextInt(3) + 2;
         System.out.println("Преподаватель " + this.firstName + " оценил студента с именем " + student.getFirstName() +
                 " по предмету " + this.subject + " на оценку " + new Estimations(randVal).getEstimationText() + ".");
     }
