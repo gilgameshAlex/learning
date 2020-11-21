@@ -6,7 +6,6 @@ public class main {
         car.setYear(2000);
         car.setModel("X-100500");
         car.setColor("white");
-        car.toString();
         System.out.println("Год выпуска: " + car.getYear());
         System.out.println("Модель: " + car.getModel());
         System.out.println("Цвет: " + car.getColor());
