@@ -17,9 +17,13 @@ public class Main {
             Scanner scanner = new Scanner(file);
             while (scanner.hasNextLine()) {
                 String line  = scanner.nextLine();
-                if (Integer.parseInt(line.split(" ")[1]) < 0) throw new CustomException();
+                if (Integer.parseInt(line.split(" ")[1]) < 0) {
+                    scanner.close();
+                    throw new CustomException();
+                }
                 list.add(line);
             }
+            scanner.close();
         } catch (FileNotFoundException e) {
             System.out.println("Файл не найден");
         } catch (CustomException e) {
