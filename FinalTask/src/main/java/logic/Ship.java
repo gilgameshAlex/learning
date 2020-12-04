@@ -1,5 +1,7 @@
+package logic;
+
 public enum Ship {
-    SHIP_1(1, 4), SHIP_2(2, 3), SHIP_3(3, 1), SHIP_4(4, 1);
+    SHIP_1(1, 4), SHIP_2(2, 3), SHIP_3(3, 2), SHIP_4(4, 1);
     private int size;
     private int count;
     private String desc;

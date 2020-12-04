@@ -1,5 +1,8 @@
+package logic;
+
 public enum BoardItem {
-    SHIP_PART(1, "\uD83D\uDEE5"), MISSING_SHOT(2, "*"), INJURED_PART(3, "\uD83D\uDFE5"), HALO_PART(4, "\uD83D\uDFE6"), EMPTY(0, "⬜");
+    SHIP_PART(1, "⬛"), MISSING_SHOT(2, "⚫"), INJURED_PART(3, "✖"),
+    HALO_PART(4, "\uD83D\uDD36"), EMPTY(0, "⬜");
     private int x;
     private int y;
     private int desc;
